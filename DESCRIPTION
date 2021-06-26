@@ -18,7 +18,9 @@ Imports:
     scales
 Depends:
     raster,
-    maps
+    maps,
+    plyr,
+    scales
 Suggests:
     roxygen2,
     testthat
