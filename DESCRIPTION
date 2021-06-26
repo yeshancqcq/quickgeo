@@ -15,12 +15,14 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1.9001
 Imports:
     plyr,
-    scales
+    scales,
+    sp
 Depends:
     raster,
     maps,
     plyr,
-    scales
+    scales,
+    sp
 Suggests:
     roxygen2,
     testthat
