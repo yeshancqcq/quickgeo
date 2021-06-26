@@ -1,0 +1,24 @@
+Package: quickgeo
+Title: Quick Zonal Statistics of Global Point Data
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Shan",
+           family = "Ye",
+           role = c("aut", "cre"),
+           email = "",
+           comment = c(ORCID = ""))
+Description: Quickly conduct zonal statistics of point data and visualize the result on a world map. A raster file of the statistics is also generated. Good for exploratory analysis of spatial data in global or continental scales.
+License: `use_mit_license()`
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1.9001
+Imports:
+    plyr,
+    scales
+Depends:
+    raster,
+    maps
+Suggests:
+    roxygen2,
+    testthat
