@@ -5,8 +5,8 @@ Authors@R:
     person(given = "Shan",
            family = "Ye",
            role = c("aut", "cre"),
-           email = "",
-           comment = c(ORCID = ""))
+           email = "yeshanumich@126.com")
+Maintainer: Shan Ye <yeshanumich@126.com>
 Description: Quickly conduct zonal statistics of point data and visualize the result on a world map. A raster file of the statistics is also generated. Good for exploratory analysis of spatial data in global or continental scales.
 License: `use_mit_license()`
 Encoding: UTF-8
