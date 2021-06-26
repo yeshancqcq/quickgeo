@@ -23,23 +23,6 @@
   return(raster_data)
 }
 
-.reclassify<-function(raster_data,color_ramp, level,...){
-  Pal <- colorRampPalette(color_ramp)
-  plot(raster_data,col=alpha(Pal(level),0.8),add=T,...)
-}
-
-.plot_raster<-function(raster_data,color_ramp,marine_color,land_color,res,level,...){
-  par(oma=c(0,0,0,2),...)
-  df_view<-map(type="n",...)
-  view_frame<-extent(df_view$range)
-  r2<-raster(view_frame)
-  res(r2)<-c(res,res)
-  values(r2)<-NA
-  plot(r2,xaxt="n",yaxt="n")
-  .getmarine (marine_color,land_color,...)
-  map(col=land_color,fill=T,add=T,...)
-  .reclassify(raster_data,color_ramp,level,...)
-}
 
 #' The zonal_stats function
 #'
@@ -75,8 +58,17 @@ zonal_stats <- function(data,
   coord_use <- .getcoord(data)
   raster_data<-.make_raster(coord_use,res,land_color,marine_color,stat,...)
   if(map==T){
-    
-    .plot_raster(raster_data,color_ramp,marine_color,land_color,res,level,...)
+    par(oma=c(0,0,0,2),...)
+    df_view<-map(type="n",...)
+    view_frame<-extent(df_view$range)
+    new_raster<-raster(view_frame)
+    res(new_raster)<-c(res,res)
+    values(new_raster)<-NA
+    sp::plot(new_raster,xaxt="n",yaxt="n")
+    .getmarine (marine_color,land_color,...)
+    map(col=land_color,fill=T,add=T,...)
+    Pal <- colorRampPalette(color_ramp)
+    sp::plot(raster_data,col=alpha(Pal(level),0.8),add=T,...)
     mtext(label,4,line=0,cex=1.4)}
   return(raster_data)
 }
