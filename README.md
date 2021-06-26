@@ -26,13 +26,13 @@ Import the point data into R
  
 Calculating the sum of values within each zone (resolution = 20), and get the result
 
-<code> zonal_stats(test, res= 20, level = 15, label = "", map=T, stat=sum) </code>
+<code> zonal_stats(df, res= 20, level = 15, label = "", map=T, stat=sum) </code>
 
  ![result](img/map.JPG)
  
  Or, calculating the mean of values with a finer resolution (10) and customize the map
  
- <code>zonal_stats(test, res= 10, level = 10, land_color = "#d9d2b6" ,marine_color = "white", color_ramp = c("#c0e8a7", "#678752"), label = "", map=T,stat=mean)</code>
+ <code>zonal_stats(df, res= 10, level = 10, land_color = "#d9d2b6" ,marine_color = "white", color_ramp = c("#c0e8a7", "#678752"), label = "", map=T,stat=mean)</code>
  
   ![result](img/map2.JPG)
 
