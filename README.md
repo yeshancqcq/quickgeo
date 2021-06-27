@@ -70,4 +70,4 @@ It is flexible with various ggplot customizations.
 
 and the result is:
 
-  ![axis](img/axis.JPG)
+  ![axis](img/axis.jpeg)
