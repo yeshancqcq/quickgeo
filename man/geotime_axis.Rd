@@ -18,13 +18,13 @@ geotime_axis(
 )
 }
 \arguments{
-\item{plot}{An intiated ggplot object without any theme and axis settings}
+\item{plot}{An intiated ggplot object without any theme or axis settings}
 
 \item{level}{Level of the geological interval to be shown on the axis. Default is period. Others available include age, epoch, era, and eon.}
 
 \item{age_min}{The minimum age of the plot (in Ma). Default is 0.}
 
-\item{age_max}{The maximum age of the plot (in Ma). Default is 0.}
+\item{age_max}{The maximum age of the plot (in Ma). Default is 540.}
 
 \item{x_reverse}{If the x axis should be reversed (older ages to the left)}
 

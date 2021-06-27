@@ -1,10 +1,10 @@
 #' The geotime_axis function
 #'
 #' This function allows you to do zonal statistics of a point dataset
-#' @param plot An intiated ggplot object without any theme and axis settings
+#' @param plot An intiated ggplot object without any theme or axis settings
 #' @param level Level of the geological interval to be shown on the axis. Default is period. Others available include age, epoch, era, and eon.
 #' @param age_min The minimum age of the plot (in Ma). Default is 0.
-#' @param age_max The maximum age of the plot (in Ma). Default is 0.
+#' @param age_max The maximum age of the plot (in Ma). Default is 540.
 #' @param x_reverse If the x axis should be reversed (older ages to the left)
 #' @param y_reveerse If the y axis should be reversed (smaller value to the top)
 #' @param label If the time scale should be labelled. Options: abbr, full, or none
