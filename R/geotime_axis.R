@@ -7,7 +7,7 @@
 #' @param age_max The maximum age of the plot (in Ma). Default is 0.
 #' @param x_reverse If the x axis should be reversed (older ages to the left)
 #' @param y_reveerse If the y axis should be reversed (smaller value to the top)
-#' @param label If the time scale should be labelled. Options: abbr, fullname, or none
+#' @param label If the time scale should be labelled. Options: abbr, full, or none
 #' @param div_y How many breaks (tickmarks) should be on the y axis. Default is 10.
 #' @param div_x How many breaks (tickmarks) should be on the x axis. Default is 10.
 #' @param pos The position of the legend if there is one. Default is to the right. See ggplot2.
@@ -26,7 +26,7 @@ geotime_axis <- function(plot, level = "period", age_min = 0, age_max = 540, x_r
     interval <- read.csv("https://raw.githubusercontent.com/yeshancqcq/geotime/master/epoch.csv")
     
   } else if (level %in% c("eon")){
-    interval< read.csv("https://raw.githubusercontent.com/yeshancqcq/geotime/master/eon.csv")
+    interval<- read.csv("https://raw.githubusercontent.com/yeshancqcq/geotime/master/eon.csv")
   }  else if(level %in% c("age")){
     interval <- read.csv("https://raw.githubusercontent.com/yeshancqcq/geotime/master/age.csv")
   } else {
@@ -59,7 +59,7 @@ geotime_axis <- function(plot, level = "period", age_min = 0, age_max = 540, x_r
     plot <- plot + annotate("text", x = interval$mid_age, label = interval$abbr, y = (ymin+ymax)/2,
                             vjust = "middle", hjust = "middle", size = 4.5)
   } else if(label == "full"){
-    plot <- plot + annotate("text", x = interval$mid_age, label = interval$time, y = (ymin+ymax)/2,
+    plot <- plot + annotate("text", x = interval$mid_age, label = interval[,1], y = (ymin+ymax)/2,
                             vjust = "middle", hjust = "middle", size = 4.5)
   }
   
