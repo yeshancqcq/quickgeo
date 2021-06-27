@@ -16,13 +16,17 @@ RoxygenNote: 7.1.1.9001
 Imports:
     plyr,
     scales,
-    sp
+    sp,
+    readr,
+    ggplot2
 Depends:
     raster,
     maps,
     plyr,
     scales,
-    sp
+    sp,
+    readr,
+    ggplot2
 Suggests:
     roxygen2,
     testthat
