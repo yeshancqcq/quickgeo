@@ -28,7 +28,7 @@ geotime_axis(
 
 \item{x_reverse}{If the x axis should be reversed (older ages to the left)}
 
-\item{label}{If the time scale should be labelled. Options: abbr, fullname, or none}
+\item{label}{If the time scale should be labelled. Options: abbr, full, or none}
 
 \item{div_y}{How many breaks (tickmarks) should be on the y axis. Default is 10.}
 
