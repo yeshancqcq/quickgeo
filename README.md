@@ -4,11 +4,11 @@ This R package is for quick plots of geological and climatological data with spa
 
 More functions will be gradually added in the future.
 
-### Installation
+## Installation
     install_github('yeshancqcq/quickgeo')
 
-### Functions
-#### Zonal statistics
+## Functions
+### Zonal statistics
 
 The <code>zonal_stat()</code> function can perform quick zonal statistics for point data across a continent or the globe.
 
@@ -43,7 +43,7 @@ Calculating the sum of values within each zone (resolution = 20), and get the re
 
   ![result](img/map2.JPG)
 
-#### Geological time scale on the axis
+### Geological time scale on the axis
 
 The <code>geotime_axis()</code> function can add a geological time scale to the axis of a plot. It is good for time series visualization.
 
@@ -72,7 +72,7 @@ and the result is:
 
   ![axis](img/axis.jpeg)
 
-#### Quick check the bedrock coverage
+### Quick check the bedrock coverage
 
 The <code>bedrock()</code> function allows you to quickly plot a schematic map shouwing the bedrock coverage of a given age.
 
@@ -87,5 +87,15 @@ This will plot the bedrock areas between 1000 and 3000 Ma. Because the third arg
 The result is:
 
   ![result](img/bedrock.JPG)
+
+Bedrocks from this period is in light color.
+
+### Stereograph
+The <code>stereograph()</code> function can generate a stereograph from a pair of strike and dip data. The 2 arguments are strike and dip in degrees.
+
+    bedrock(113,44)
+
+
+  ![result](img/stereo.JPG)
 
 Bedrocks from this period is in light color.
