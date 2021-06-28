@@ -97,5 +97,3 @@ The <code>stereograph()</code> function can generate a stereograph from a pair o
 
 
   ![result](img/stereo.JPG)
-
-Bedrocks from this period is in light color.
