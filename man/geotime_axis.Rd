@@ -39,7 +39,7 @@ geotime_axis(
 \item{y_reveerse}{If the y axis should be reversed (smaller value to the top)}
 }
 \description{
-This function allows you to do zonal statistics of a point dataset
+This function allows you to add geological time scale to the axis of a plot
 }
 \examples{
 plot <- ggplot() + geom_line(aes(...), ...) 
