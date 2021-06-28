@@ -71,3 +71,21 @@ It is flexible with various ggplot customizations.
 and the result is:
 
   ![axis](img/axis.jpeg)
+
+#### Quick check the bedrock coverage
+
+The <code>bedrock()</code> function allows you to quickly plot a schematic map shouwing the bedrock coverage of a given age.
+
+There are 3 arguments and the later 2 of them are optional. The first and second arguments are numeric indicating the age (duration, if the second is used) to be checked (in Ma). The third argument indicates the method of overlapping the time intervals. When "partial" is passed (which is the default), a bedrock area would be shown on the map if its age range intersects with the  input age interval. If "entire" is chosen, then the map only shows bedrock areas whose age range is entirely within the given interval.
+
+##### Example
+
+    bedrock(1000,3000)
+
+This will plot the bedrock areas between 1000 and 3000 Ma. Because the third argument is unused, the default setting will apply ("partial").
+
+The result is:
+
+  ![result](img/bedrock.JPG)
+
+Bedrocks from this period is in light color.
