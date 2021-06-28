@@ -1,6 +1,6 @@
 #' The geotime_axis function
 #'
-#' This function allows you to do zonal statistics of a point dataset
+#' This function allows you to add geological time scale to the axis of a plot
 #' @param plot An intiated ggplot object without any theme or axis settings
 #' @param level Level of the geological interval to be shown on the axis. Default is period. Others available include age, epoch, era, and eon.
 #' @param age_min The minimum age of the plot (in Ma). Default is 0.
