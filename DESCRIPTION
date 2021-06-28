@@ -1,5 +1,5 @@
 Package: quickgeo
-Title: Quick Zonal Statistics of Global Point Data
+Title: Tools for geologists to do quick exploratory data analysis
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Shan",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "yeshanumich@126.com")
 Maintainer: Shan Ye <yeshanumich@126.com>
-Description: Quickly conduct zonal statistics of point data and visualize the result on a world map. A raster file of the statistics is also generated. Good for exploratory analysis of spatial data in global or continental scales.
+Description: Tools for geologists to do quick exploratory data analysis
 License: `use_mit_license()`
 Encoding: UTF-8
 LazyData: true
@@ -18,7 +18,8 @@ Imports:
     scales,
     sp,
     readr,
-    ggplot2
+    ggplot2,
+    geojsonio
 Depends:
     raster,
     maps,
@@ -26,6 +27,7 @@ Depends:
     scales,
     sp,
     readr,
+    geojsonio,
     ggplot2
 Suggests:
     roxygen2,
