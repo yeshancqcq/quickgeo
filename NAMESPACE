@@ -2,4 +2,5 @@
 
 export(bedrock)
 export(geotime_axis)
+export(stereograph)
 export(zonal_stats)
