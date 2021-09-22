@@ -29,6 +29,8 @@ geotime_axis <- function(plot, level = "period", age_min = 0, age_max = 540, x_r
     interval<- read.csv("https://raw.githubusercontent.com/yeshancqcq/geotime/master/eon.csv")
   }  else if(level %in% c("age")){
     interval <- read.csv("https://raw.githubusercontent.com/yeshancqcq/geotime/master/age.csv")
+  } else if(level %in% c("kpg")){
+    interval <- read.csv("https://raw.githubusercontent.com/yeshancqcq/geotime/master/kpg.csv")
   } else {
     interval <- read.csv("https://raw.githubusercontent.com/yeshancqcq/geotime/master/era.csv")
   }
